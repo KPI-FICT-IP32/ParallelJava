@@ -36,5 +36,6 @@ public class Writer {
     @SneakyThrows(IOException.class)
     private static void _doWrite(String contents, String filepath) {
         Files.write(contents, new File(filepath), UTF_8);
+        System.out.printf("%d [Writer] %s written\n", System.currentTimeMillis(), filepath);
     }
 }
