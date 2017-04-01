@@ -19,7 +19,7 @@
 
 (defn calc-ma [md mt mz me mm]
   "MА=MD*(MT+MZ)-ME*MM;"
-1  (mm-sub
+  (mm-sub
     (mm-mul md (mm-add mt mz))
     (mm-mul me mm)))
 
